@@ -391,12 +391,12 @@ export default function Content({
                         </span>
                       </div>
                       {/* /.direct-chat-info */}
-                      <img
+                      {/* <img
                         className="direct-chat-img"
                         src="dist/img/user1-128x128.jpg"
                         alt="message user image"
-                      />
-                      {/* /.direct-chat-img */}
+                      /> */}
+                      
                       <div className="direct-chat-text">
                         Is this template really for free? That's unbelievable!
                       </div>
@@ -1137,7 +1137,7 @@ export default function Content({
                 {/* /.item */}
                 <li className="item">
                   <div className="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image" />
+                    {/* <img src="dist/img/ -50x50.gif" alt="Product Image" /> */}
                   </div>
                   <div className="product-info">
                     <a href="javascript:void(0)" className="product-title">
@@ -1154,7 +1154,7 @@ export default function Content({
                 {/* /.item */}
                 <li className="item">
                   <div className="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image" />
+                    {/* <img src="dist/img/default-50x50.gif" alt="Product Image" /> */}
                   </div>
                   <div className="product-info">
                     <a href="javascript:void(0)" className="product-title">

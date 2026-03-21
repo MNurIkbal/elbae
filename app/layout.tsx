@@ -1,3 +1,4 @@
+"use client";
 import Sidebar from './components/layout/Sidebar'
 import Content from './components/layout/Content'
 import Header from './components/layout/Header'
@@ -9,6 +10,7 @@ import './../public/assets/css/font-awesome.min.css'
 import './../public/assets/css/ionicons.min.css'
 import './../public/assets/css/jquery-jvectormap.css'
 import Script from 'next/script'
+import ScriptLoader from './components/layout/ScriptLoader';
 
 
 export default function RootLayout({
@@ -21,10 +23,8 @@ export default function RootLayout({
       <body>
         <div style={{ display: 'flex', minHeight: '100vh' }}>
 
-          {/* Sidebar */}
           <Sidebar />
 
-          {/* Right Section */}
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
             
             <Header />
@@ -34,42 +34,12 @@ export default function RootLayout({
             </Content>
 
             <Footer />
+            <ScriptLoader />
 
           </div>
 
         </div>
-        <Script
-        src="./../public/assets/js/bootstrap.min.js"
-        strategy="beforeInteractive"
-      />
-        <Script
-        src="./../public/assets/js/adminlte.min.js"
-        strategy="beforeInteractive"
-      />
-        <Script
-        src="./../public/assets/js/Chart.js"
-        strategy="beforeInteractive"
-      />
-        <Script
-        src="./../public/assets/js/dashboard2.js"
-        strategy="beforeInteractive"
-      />
-        <Script
-        src="./../public/assets/js/demo.js"
-        strategy="beforeInteractive"
-      />
-        <Script
-        src="./../public/assets/js/jquery-jvectormap-1.2.2.min.js"
-        strategy="beforeInteractive"
-      />
-        <Script
-        src="./../public/assets/js/jquery-jvectormap-world-mill-en.js"
-        strategy="beforeInteractive"
-      />
-        <Script
-        src="./../public/assets/js/jquery.slimscroll.min.js"
-        strategy="beforeInteractive"
-      />
+        
       </body>
     </html>
   )

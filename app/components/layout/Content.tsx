@@ -391,11 +391,11 @@ export default function Content({
                         </span>
                       </div>
                       {/* /.direct-chat-info */}
-                      <img
+                      {/* <img
                         className="direct-chat-img"
                         src="dist/img/user1-128x128.jpg"
                         alt="message user image"
-                      />
+                      /> */}
                       {/* /.direct-chat-img */}
                       <div className="direct-chat-text">
                         Is this template really for free? That's unbelievable!
@@ -414,11 +414,11 @@ export default function Content({
                         </span>
                       </div>
                       {/* /.direct-chat-info */}
-                      <img
+                      {/* <img
                         className="direct-chat-img"
                         src="dist/img/user3-128x128.jpg"
                         alt="message user image"
-                      />
+                      /> */}
                       {/* /.direct-chat-img */}
                       <div className="direct-chat-text">
                         You better believe it!
@@ -437,11 +437,11 @@ export default function Content({
                         </span>
                       </div>
                       {/* /.direct-chat-info */}
-                      <img
+                      {/* <img
                         className="direct-chat-img"
                         src="dist/img/user1-128x128.jpg"
                         alt="message user image"
-                      />
+                      /> */}
                       {/* /.direct-chat-img */}
                       <div className="direct-chat-text">
                         Working with AdminLTE on a great new app! Wanna join?
@@ -460,11 +460,11 @@ export default function Content({
                         </span>
                       </div>
                       {/* /.direct-chat-info */}
-                      <img
+                      {/* <img
                         className="direct-chat-img"
                         src="dist/img/user3-128x128.jpg"
                         alt="message user image"
-                      />
+                      /> */}
                       {/* /.direct-chat-img */}
                       <div className="direct-chat-text">I would love to.</div>
                       {/* /.direct-chat-text */}
@@ -477,11 +477,11 @@ export default function Content({
                     <ul className="contacts-list">
                       <li>
                         <a href="#">
-                          <img
+                          {/* <img
                             className="contacts-list-img"
                             src="dist/img/user1-128x128.jpg"
                             alt="User Image"
-                          />
+                          /> */}
                           <div className="contacts-list-info">
                             <span className="contacts-list-name">
                               Count Dracula

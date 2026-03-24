@@ -1,360 +1,89 @@
+import { Icon } from "@iconify/react";
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Header() {
   return (
     <>
-    <header className="main-header">
-    {/* Logo */}
-    <a href="index2.html" className="logo">
-      {/* mini logo for sidebar mini 50x50 pixels */}
-      <span className="logo-mini">
-        <b>A</b>LT
-      </span>
-      {/* logo for regular state and mobile devices */}
-      <span className="logo-lg">
-        <b>Admin</b>LTE
-      </span>
-    </a>
-    {/* Header Navbar: style can be found in header.less */}
-    <nav className="navbar navbar-static-top">
-      {/* Sidebar toggle button*/}
-      <a
-        href="#"
-        className="sidebar-toggle"
-        data-toggle="push-menu"
-        role="button"
-      >
-        <span className="sr-only">Toggle navigation</span>
-      </a>
-      {/* Navbar Right Menu */}
-      <div className="navbar-custom-menu">
-        <ul className="nav navbar-nav">
-          {/* Messages: style can be found in dropdown.less*/}
-          <li className="dropdown messages-menu">
-            <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-              <i className="fa fa-envelope-o" />
-              <span className="label label-success">4</span>
-            </a>
-            <ul className="dropdown-menu">
-              <li className="header">You have 4 messages</li>
-              <li>
-                {/* inner menu: contains the actual data */}
-                <ul className="menu">
-                  <li>
-                    {/* start message */}
-                    <a href="#">
-                      <div className="pull-left">
-                        <img
-                          src="dist/img/user2-160x160.jpg"
-                          className="img-circle"
-                          alt="User Image"
-                        />
-                      </div>
-                      <h4>
-                        Support Team
-                        <small>
-                          <i className="fa fa-clock-o" /> 5 mins
-                        </small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  {/* end message */}
-                  <li>
-                    <a href="#">
-                      <div className="pull-left">
-                        <img
-                          src="dist/img/user3-128x128.jpg"
-                          className="img-circle"
-                          alt="User Image"
-                        />
-                      </div>
-                      <h4>
-                        AdminLTE Design Team
-                        <small>
-                          <i className="fa fa-clock-o" /> 2 hours
-                        </small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div className="pull-left">
-                        <img
-                          src="dist/img/user4-128x128.jpg"
-                          className="img-circle"
-                          alt="User Image"
-                        />
-                      </div>
-                      <h4>
-                        Developers
-                        <small>
-                          <i className="fa fa-clock-o" /> Today
-                        </small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div className="pull-left">
-                        <img
-                          src="dist/img/user3-128x128.jpg"
-                          className="img-circle"
-                          alt="User Image"
-                        />
-                      </div>
-                      <h4>
-                        Sales Department
-                        <small>
-                          <i className="fa fa-clock-o" /> Yesterday
-                        </small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div className="pull-left">
-                        <img
-                          src="dist/img/user4-128x128.jpg"
-                          className="img-circle"
-                          alt="User Image"
-                        />
-                      </div>
-                      <h4>
-                        Reviewers
-                        <small>
-                          <i className="fa fa-clock-o" /> 2 days
-                        </small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li className="footer">
-                <a href="#">See All Messages</a>
-              </li>
-            </ul>
-          </li>
-          {/* Notifications: style can be found in dropdown.less */}
-          <li className="dropdown notifications-menu">
-            <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-              <i className="fa fa-bell-o" />
-              <span className="label label-warning">10</span>
-            </a>
-            <ul className="dropdown-menu">
-              <li className="header">You have 10 notifications</li>
-              <li>
-                {/* inner menu: contains the actual data */}
-                <ul className="menu">
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-users text-aqua" /> 5 new members
-                      joined today
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-warning text-yellow" /> Very long
-                      description here that may not fit into the page and may
-                      cause design problems
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-users text-red" /> 5 new members
-                      joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-shopping-cart text-green" /> 25 sales
-                      made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-user text-red" /> You changed your
-                      username
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li className="footer">
-                <a href="#">View all</a>
-              </li>
-            </ul>
-          </li>
-          {/* Tasks: style can be found in dropdown.less */}
-          <li className="dropdown tasks-menu">
-            <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-              <i className="fa fa-flag-o" />
-              <span className="label label-danger">9</span>
-            </a>
-            <ul className="dropdown-menu">
-              <li className="header">You have 9 tasks</li>
-              <li>
-                {/* inner menu: contains the actual data */}
-                <ul className="menu">
-                  <li>
-                    {/* Task item */}
-                    <a href="#">
-                      <h3>
-                        Design some buttons
-                        <small className="pull-right">20%</small>
-                      </h3>
-                      <div className="progress xs">
-                        <div
-                          className="progress-bar progress-bar-aqua"
-                          style={{ width: "20%" }}
-                          role="progressbar"
-                          aria-valuenow={20}
-                          aria-valuemin={0}
-                          aria-valuemax={100}
-                        >
-                          <span className="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  {/* end task item */}
-                  <li>
-                    {/* Task item */}
-                    <a href="#">
-                      <h3>
-                        Create a nice theme
-                        <small className="pull-right">40%</small>
-                      </h3>
-                      <div className="progress xs">
-                        <div
-                          className="progress-bar progress-bar-green"
-                          style={{ width: "40%" }}
-                          role="progressbar"
-                          aria-valuenow={20}
-                          aria-valuemin={0}
-                          aria-valuemax={100}
-                        >
-                          <span className="sr-only">40% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  {/* end task item */}
-                  <li>
-                    {/* Task item */}
-                    <a href="#">
-                      <h3>
-                        Some task I need to do
-                        <small className="pull-right">60%</small>
-                      </h3>
-                      <div className="progress xs">
-                        <div
-                          className="progress-bar progress-bar-red"
-                          style={{ width: "60%" }}
-                          role="progressbar"
-                          aria-valuenow={20}
-                          aria-valuemin={0}
-                          aria-valuemax={100}
-                        >
-                          <span className="sr-only">60% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  {/* end task item */}
-                  <li>
-                    {/* Task item */}
-                    <a href="#">
-                      <h3>
-                        Make beautiful transitions
-                        <small className="pull-right">80%</small>
-                      </h3>
-                      <div className="progress xs">
-                        <div
-                          className="progress-bar progress-bar-yellow"
-                          style={{ width: "80%" }}
-                          role="progressbar"
-                          aria-valuenow={20}
-                          aria-valuemin={0}
-                          aria-valuemax={100}
-                        >
-                          <span className="sr-only">80% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  {/* end task item */}
-                </ul>
-              </li>
-              <li className="footer">
-                <a href="#">View all tasks</a>
-              </li>
-            </ul>
-          </li>
-          {/* User Account: style can be found in dropdown.less */}
-          <li className="dropdown user user-menu">
-            <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-              <img
-                src="dist/img/user2-160x160.jpg"
-                className="user-image"
-                alt="User Image"
-              />
-              <span className="hidden-xs">Alexander Pierce</span>
-            </a>
-            <ul className="dropdown-menu">
-              {/* User image */}
-              <li className="user-header">
-                <img
-                  src="dist/img/user2-160x160.jpg"
-                  className="img-circle"
-                  alt="User Image"
+      <div className="navbar-header border-b border-neutral-200 dark:border-neutral-600">
+        <div className="flex items-center justify-between">
+          <div className="col-auto">
+            <div className="flex flex-wrap items-center gap-[16px]">
+              <button type="button" className="sidebar-toggle">
+                <Icon icon="mdi:menu" className="menu-icon"></Icon>
+              </button>
+              <button
+                type="button"
+                className="sidebar-mobile-toggle d-flex !leading-[0]"
+              >
+                <Icon icon="mdi:menu" className="menu-icon"></Icon>
+              </button>
+              <form className="navbar-search">
+                <h5>Aplikasi E-Arsip</h5>
+
+              </form>
+            </div>
+          </div>
+          <div className="col-auto">
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                id="theme-toggle"
+                className="w-10 h-10 bg-neutral-200 dark:bg-neutral-700 dark:text-white rounded-full flex justify-center items-center"
+              >
+                <span id="theme-toggle-dark-icon" className="hidden">
+                  <i className="ri-sun-line" />
+                </span>
+                <span id="theme-toggle-light-icon" className="hidden">
+                  <i className="ri-moon-line" />
+                </span>
+              </button>
+              {/* Notification End  */}
+              <button
+                data-dropdown-toggle="dropdownProfile"
+                className="flex justify-center items-center rounded-full"
+                type="button"
+              >
+                <Image
+                  width={100}
+                  height={100}
+                  src="/assets/img/user.png"
+                  alt="image"
+                  className="w-10 h-10 object-fit-cover rounded-full"
                 />
-                <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
-                </p>
-              </li>
-              {/* Menu Body */}
-              <li className="user-body">
-                <div className="row">
-                  <div className="col-xs-4 text-center">
-                    <a href="#">Followers</a>
+              </button>
+              <div
+                id="dropdownProfile"
+                className="z-10 hidden bg-white dark:bg-neutral-700 rounded-lg shadow-lg dropdown-menu-sm p-3"
+              >
+                <div className="py-3 px-4 rounded-lg bg-primary-50 dark:bg-primary-600/25 mb-4 flex items-center justify-between gap-2">
+                  <div>
+                    <h6 className="text-lg text-neutral-900 font-semibold mb-0">
+                      Shahidul Islam
+                    </h6>
+                    <span className="text-neutral-500">Admin</span>
                   </div>
-                  <div className="col-xs-4 text-center">
-                    <a href="#">Sales</a>
-                  </div>
-                  <div className="col-xs-4 text-center">
-                    <a href="#">Friends</a>
-                  </div>
+                  <button type="button" className="hover:text-danger-600">
+                  </button>
                 </div>
-                {/* /.row */}
-              </li>
-              {/* Menu Footer*/}
-              <li className="user-footer">
-                <div className="pull-left">
-                  <a href="#" className="btn btn-default btn-flat">
-                    Profile
-                  </a>
+                <div className="max-h-[400px] overflow-y-auto scroll-sm pe-2">
+                  <ul className="flex flex-col">
+                    <li>
+                      <Link
+                        className="text-black px-0 py-2 hover:text-danger-600 flex items-center gap-4"
+                        href="javascript:void(0)"
+                      >
+                        <Icon icon="mdi:logout" className="menu-icon"></Icon>
+                        Log Out
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
-                <div className="pull-right">
-                  <a href="#" className="btn btn-default btn-flat">
-                    Sign out
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          {/* Control Sidebar Toggle Button */}
-          <li>
-            <a href="#" data-toggle="control-sidebar">
-              <i className="fa fa-gears" />
-            </a>
-          </li>
-        </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
     </>
   );
 }

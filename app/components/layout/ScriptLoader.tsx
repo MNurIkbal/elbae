@@ -3,45 +3,77 @@
 import Script from "next/script";
 
 export default function ScriptLoader() {
-    return (
-        <>
-            <Script
-                src="./../public/assets/js/bootstrap.min.js"
-                strategy="afterInteractive"
-            />
-            <Script
-                src="./../public/assets/js/adminlte.min.js"
-                strategy="afterInteractive"
-            />
-            <Script
-                src="./../public/assets/js/Chart.js"
-                strategy="afterInteractive"
-            />
-            <Script
-                src="./../public/assets/js/dashboard2.js"
-                strategy="afterInteractive"
-            />
-            <Script
-                src="./../public/assets/js/demo.js"
-                strategy="afterInteractive"
-            />
-            <Script
-                src="./../public/assets/js/jquery-jvectormap-1.2.2.min.js"
-                strategy="afterInteractive"
-            />
-            <Script
-                src="./../public/assets/js/fastclick.js"
-                strategy="afterInteractive"
-            />
-            <Script
-                src="./../public/assets/js/jquery-jvectormap-world-mill-en.js"
-                strategy="afterInteractive"
-            />
-            <Script
-                src="./../public/assets/js/jquery.slimscroll.min.js"
-                strategy="afterInteractive"
-            />
-            <Script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"2437d112162f4ec4b63c3ca0eb38fb20","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' />
-        </>
-    );
+  return (
+    <>
+      {/* 🔥 1. JQUERY WAJIB PALING AWAL */}
+      <Script
+        src="/assets/js/jquery-3.7.1.min.js"
+        strategy="beforeInteractive"
+      />
+
+      {/* 🔥 2. JQUERY DEPENDENCIES */}
+      <Script
+        src="/assets/js/jquery-ui.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/jquery-jvectormap-2.0.5.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/jquery-jvectormap-world-mill-en.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/magnifc-popup.min.js"
+        strategy="afterInteractive"
+      />
+
+      {/* 🔥 3. LIBRARY LAIN */}
+      <Script
+        src="/assets/js/apexcharts.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/slick.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/prism.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/simple-datatables.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/flowbite.min.js"
+        strategy="afterInteractive"
+      />
+
+      {/* 🔥 4. CUSTOM SCRIPT (PALING AKHIR) */}
+      <Script
+        src="/assets/js/app.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/audioplayer.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/file-upload.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/assets/js/homeThreeChart.js"
+        strategy="afterInteractive"
+      />
+
+      {/* 🔥 5. ICONIFY */}
+      <Script
+        src="/assets/js/iconify-icon.min.js"
+        strategy="afterInteractive"
+      />
+    </>
+  );
 }

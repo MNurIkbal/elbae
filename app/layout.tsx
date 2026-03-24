@@ -1,17 +1,26 @@
-"use client";
-import Sidebar from './components/layout/Sidebar'
-import Content from './components/layout/Content'
-import Header from './components/layout/Header'
-import Footer from './components/layout/Footer'
-import './../public/assets/css/bootstrap.min.css'
-import './../public/assets/css/_all-skins.min.css'
-import './../public/assets/css/AdminLTE.min.css'
-import './../public/assets/css/font-awesome.min.css'
-import './../public/assets/css/ionicons.min.css'
-import './../public/assets/css/jquery-jvectormap.css'
-import Script from 'next/script'
-import ScriptLoader from './components/layout/ScriptLoader';
+'use client'
+import '@/public/assets/css/remixicon.css'
+import '@/public/assets/css/apexcharts.css'
+import '@/public/assets/css/dataTables.min.css'
+import '@/public/assets/css/editor-katex.min.css'
+import '@/public/assets/css/editor.atom-one-dark.min.css'
+import '@/public/assets/css/editor.quill.snow.css'
+import '@/public/assets/css/flatpickr.min.css'
+import '@/public/assets/css/full-calendar.css'
+import '@/public/assets/css/jquery-jvectormap-2.0.5.css'
+import '@/public/assets/css/magnific-popup.css'
+import '@/public/assets/css/slick.css'
+import '@/public/assets/css/prism.css'
+import '@/public/assets/css/file-upload.css'
+import '@/public/assets/css/audioplayer.css'
+import '@/public/assets/css/style.css'
 
+import { Inter } from "next/font/google";
+import ScriptLoader from './components/layout/ScriptLoader'
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -19,28 +28,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
-        <div style={{ display: 'flex', minHeight: '100vh' }}>
-
-          <Sidebar />
-
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-            
-            <Header />
-
-            <Content>
-              {children}
-            </Content>
-
-            <Footer />
-            <ScriptLoader />
-
-          </div>
-
-        </div>
-        
+    <html lang="en" className={inter.className} >
+      <body className="dark:bg-neutral-800 bg-neutral-100 dark:text-white">
+        {children}
+        <ScriptLoader />
       </body>
     </html>
   )
 }
+
+// template wowdash index - 3

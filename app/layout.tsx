@@ -16,7 +16,6 @@ import '@/public/assets/css/audioplayer.css'
 import '@/public/assets/css/style.css'
 
 import { Inter } from "next/font/google";
-import ScriptLoader from './components/layout/ScriptLoader'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,7 +30,6 @@ export default function RootLayout({
     <html lang="en" className={inter.className} >
       <body className="dark:bg-neutral-800 bg-neutral-100 dark:text-white">
         {children}
-        <ScriptLoader />
       </body>
     </html>
   )

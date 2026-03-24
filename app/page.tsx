@@ -1,7 +1,9 @@
+import Auth from "./auth/page";
+
 export default function Home() {
   return (
     <>
-    <h1>login </h1>
+    <Auth />
     </>
   )
 }

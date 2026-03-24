@@ -10,7 +10,7 @@ export default function Sidebar() {
           lr  
         </button>
         <div>
-          <a href="" className="sidebar-logo">
+          <Link href="" className="sidebar-logo">
             <Image
               src="/assets/img/logo.png"
               alt="site logo"
@@ -32,7 +32,7 @@ export default function Sidebar() {
               height={35}
               className="logo-icon"
             />
-          </a>
+          </Link>
         </div>
         <div className="sidebar-menu-area">
           <ul className="sidebar-menu" id="sidebar-menu">
@@ -43,7 +43,7 @@ export default function Sidebar() {
               </Link>
             </li>
             <li className="sidebar-menu-group-title">Application</li>
-            <li >
+            <li>
               <Link href="/arsip">
                 <Icon icon="mdi:book" className="menu-icon"></Icon>
                 <span>Arsip</span>

@@ -71,7 +71,7 @@ export default function Header() {
                     <li>
                       <Link
                         className="text-black px-0 py-2 hover:text-danger-600 flex items-center gap-4"
-                        href="javascript:void(0)"
+                        href="/"
                       >
                         <Icon icon="mdi:logout" className="menu-icon"></Icon>
                         Log Out

@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import Sidebar from "./Sidebar"
 import Header from "./Header"
 import Footer from "./Footer"
@@ -10,7 +10,8 @@ export default function Layout({
 }) {
     return (
         <>
-        <Sidebar />
+
+            <Sidebar />
             <main className="dashboard-main">
                 <Header />
                 <div className="dashboard-main-body">

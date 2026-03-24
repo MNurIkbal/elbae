@@ -1,4 +1,5 @@
 import ScriptLoader from "./ScriptLoader"
+import ScriptRunner from "./ScriptRunner"
 
 export default function Footer() {
   return (
@@ -14,6 +15,8 @@ export default function Footer() {
           </p>
         </div>
       </footer>
+      <ScriptLoader />
+      {/* <ScriptRunner /> */}
     </>
 
   )

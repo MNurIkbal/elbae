@@ -1,5 +1,4 @@
 import Layout from "../components/layout/Layout";
-import RootLayout from "../layout";
 
 
 export default function DashboardPage() {

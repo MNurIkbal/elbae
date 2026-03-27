@@ -1,4 +1,3 @@
-'use client'
 import '@/public/assets/css/remixicon.css'
 import '@/public/assets/css/apexcharts.css'
 import '@/public/assets/css/dataTables.min.css'
@@ -14,7 +13,6 @@ import '@/public/assets/css/prism.css'
 import '@/public/assets/css/file-upload.css'
 import '@/public/assets/css/audioplayer.css'
 import '@/public/assets/css/style.css'
-
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -27,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.className} >
+    <html lang="en" className={inter.className} data-theme="light">
       <body className="dark:bg-neutral-800 bg-neutral-100 dark:text-white">
         {children}
       </body>

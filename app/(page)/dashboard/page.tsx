@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
-import Layout from "../components/layout/Layout";
+import Layout from "../../layout/Layout";
 import { useEffect, useRef } from "react";
 import ApexCharts from "apexcharts";
+import { Icon } from "@iconify/react";
 
 
 export default function DashboardPage() {
@@ -115,7 +116,7 @@ export default function DashboardPage() {
     <>
       <Layout>
         <div className="dashboard-main-body">
-          <div className="flex flex-wrap items-center justify-between gap-2 mb-6">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-6 mt-4">
             <h6 className="font-semibold mb-0 dark:text-white">Dashboard</h6>
             <ul className="flex items-center gap-[6px]">
               <li className="font-medium">
@@ -148,6 +149,7 @@ export default function DashboardPage() {
                         <div className="flex flex-wrap items-center justify-between gap-1 mb-0.5">
                           <div>
                             <span className="w-[44px] h-[44px] text-primary-600 dark:text-primary-500 bg-primary-600/20 border border-primary-300 dark:border-primary-600/50 shrink-0 flex justify-center items-center rounded-lg h6 mb-4">
+                            <Icon icon="mdi:package-variant" className="menu-icon" />
                             </span>
                             <span className="mb-1 font-medium text-secondary-light text-base">
                               Total Arsip
@@ -162,6 +164,7 @@ export default function DashboardPage() {
                         <div className="flex flex-wrap items-center justify-between gap-1 mb-0.5">
                           <div>
                             <span className="w-[44px] h-[44px] text-warning-600 dark:text-warning-500 bg-warning-600/20 border border-warning-300 dark:border-warning-600/50 shrink-0 flex justify-center items-center rounded-lg h6 mb-4">
+                            <Icon icon="mdi:account" className="menu-icon" />
                             </span>
                             <span className="mb-1 font-medium text-secondary-light text-base">
                               Total User
@@ -176,6 +179,7 @@ export default function DashboardPage() {
                         <div className="flex flex-wrap items-center justify-between gap-1 mb-0.5">
                           <div>
                             <span className="w-[44px] h-[44px] text-purple-600 dark:text-purple-500 bg-purple-600/20 border border-purple-300 dark:border-purple-600/50 shrink-0 flex justify-center items-center rounded-lg h6 mb-4">
+                            <Icon icon="mdi:tag" className="menu-icon" />
                             </span>
                             <span className="mb-1 font-medium text-secondary-light text-base">
                               Total Kategori
@@ -190,6 +194,7 @@ export default function DashboardPage() {
                         <div className="flex flex-wrap items-center justify-between gap-1 mb-0.5">
                           <div>
                             <span className="w-[44px] h-[44px] text-pink-600 dark:text-pink-500 bg-pink-600/20 border border-pink-300 dark:border-pink-600/50 shrink-0 flex justify-center items-center rounded-lg h6 mb-4">
+                            <Icon icon="mdi:account-lock" className="menu-icon" />
                             </span>
                             <span className="mb-1 font-medium text-secondary-light text-base">
                               Total Role
@@ -278,16 +283,7 @@ export default function DashboardPage() {
                     <tbody>
                       <tr>
                         <td>
-                          <div className="flex items-center">
-                            <img
-                              src="assets/images/users/user1.png"
-                              alt=""
-                              className="shrink-0 me-3 rounded-lg"
-                            />
-                            <span className="text-lg text-secondary-light font-semibold grow">
-                              Dianne Russell
-                            </span>
-                          </div>
+                          1
                         </td>
                         <td>#6352148</td>
                         <td>iPhone 14 max</td>
@@ -297,102 +293,6 @@ export default function DashboardPage() {
                           {" "}
                           <span className="bg-success-100 dark:bg-success-600/25 text-success-600 dark:text-success-400 px-6 py-1.5 rounded-full font-medium text-sm">
                             Paid
-                          </span>{" "}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div className="flex items-center">
-                            <img
-                              src="assets/images/users/user2.png"
-                              alt=""
-                              className="shrink-0 me-3 rounded-lg"
-                            />
-                            <span className="text-lg text-secondary-light font-semibold grow">
-                              Wade Warren
-                            </span>
-                          </div>
-                        </td>
-                        <td>#6352148</td>
-                        <td>Laptop HPH </td>
-                        <td>3</td>
-                        <td>$1,000.00</td>
-                        <td className="text-center">
-                          {" "}
-                          <span className="bg-warning-100 dark:bg-warning-600/25 text-warning-600 dark:text-warning-400 px-6 py-1.5 rounded-full font-medium text-sm">
-                            Pending
-                          </span>{" "}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div className="flex items-center">
-                            <img
-                              src="assets/images/users/user3.png"
-                              alt=""
-                              className="shrink-0 me-3 rounded-lg"
-                            />
-                            <span className="text-lg text-secondary-light font-semibold grow">
-                              Albert Flores
-                            </span>
-                          </div>
-                        </td>
-                        <td>#6352148</td>
-                        <td>Smart Watch </td>
-                        <td>7</td>
-                        <td>$1,000.00</td>
-                        <td className="text-center">
-                          {" "}
-                          <span className="bg-info-100 dark:bg-info-600/25 text-info-600 dark:text-info-400 px-6 py-1.5 rounded-full font-medium text-sm">
-                            Shipped
-                          </span>{" "}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div className="flex items-center">
-                            <img
-                              src="assets/images/users/user4.png"
-                              alt=""
-                              className="shrink-0 me-3 rounded-lg"
-                            />
-                            <span className="text-lg text-secondary-light font-semibold grow">
-                              Bessie Cooper
-                            </span>
-                          </div>
-                        </td>
-                        <td>#6352148</td>
-                        <td>Nike Air Shoe</td>
-                        <td>1</td>
-                        <td>$3,000.00</td>
-                        <td className="text-center">
-                          {" "}
-                          <span className="bg-danger-100 dark:bg-danger-600/25 text-danger-600 dark:text-danger-400 px-6 py-1.5 rounded-full font-medium text-sm">
-                            Canceled
-                          </span>{" "}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div className="flex items-center">
-                            <img
-                              src="assets/images/users/user5.png"
-                              alt=""
-                              className="shrink-0 me-3 rounded-lg"
-                            />
-                            <span className="text-lg text-secondary-light font-semibold grow">
-                              Arlene McCoy
-                            </span>
-                          </div>
-                        </td>
-                        <td>#6352148</td>
-                        <td>New Headphone </td>
-                        <td>5</td>
-                        <td>$4,000.00</td>
-                        <td className="text-center">
-                          {" "}
-                          <span className="bg-danger-100 dark:bg-danger-600/25 text-danger-600 dark:text-danger-400 px-6 py-1.5 rounded-full font-medium text-sm">
-                            Canceled
                           </span>{" "}
                         </td>
                       </tr>

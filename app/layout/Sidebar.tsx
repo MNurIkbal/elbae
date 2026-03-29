@@ -13,9 +13,9 @@ export default function Sidebar() {
           <Link href="" className="sidebar-logo">
             <Image
               src="/assets/img/logo.png"
-              alt="site logo"
               width={200}
               height={100}
+              alt="site logo"
               className="light-logo"
             />
             <Image

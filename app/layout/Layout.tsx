@@ -10,11 +10,11 @@ export default function Layout({
 }) {
     return (
         <>
-        <GlobalScript />
+            <GlobalScript />
             <Sidebar />
             <main className="dashboard-main">
                 <Header />
-                {children}
+                    {children}
                 <Footer />
             </main>
         </>

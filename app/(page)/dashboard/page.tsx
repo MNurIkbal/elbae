@@ -20,7 +20,7 @@ export default function DashboardPage() {
           data: [15000, 18000, 19000, 20000, 35000, 20000, 18000, 13000, 18000, 38000, 14000, 16000],
         },
       ],
-      colors: ["#487FFF", "#FF9F29"],
+      colors: ["#487FFF"],
       chart: {
         type: "bar",
         height: 250,
@@ -120,12 +120,11 @@ export default function DashboardPage() {
             <h6 className="font-semibold mb-0 dark:text-white">Dashboard</h6>
             <ul className="flex items-center gap-[6px]">
               <li className="font-medium">
-                <a
-                  href="index.html"
+                <span
                   className="flex items-center gap-2 text-neutral-600 hover:text-primary-600 dark:text-white dark:hover:text-primary-600"
                 >
                   Dashboard
-                </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -139,7 +138,7 @@ export default function DashboardPage() {
                         <h6 className="mb-2 font-bold text-lg">Grafik Pengarsipan</h6>
                       </div>
                       <div className="mt-[60px]">
-                        <div id="paymentStatusChart" className="margin-16-minus" ref={chartRef} />
+                        <div className="margin--minus" ref={chartRef} />
                       </div>
                     </div>
                   </div>

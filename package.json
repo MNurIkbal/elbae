@@ -17,8 +17,8 @@
     "@iconify/iconify": "^3.1.1",
     "@iconify/react": "^6.0.2",
     "@react-jvectormap/world": "^1.1.2",
+    "@tanstack/react-table": "^8.21.3",
     "apexcharts": "^5.10.4",
-    "flowbite": "^4.0.1",
     "jquery": "^4.0.0",
     "jquery-ui": "^1.14.2",
     "magnific-popup": "^1.2.0",
@@ -31,15 +31,11 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "autoprefixer": "^10.4.27",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
-    "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.2",
     "typescript": "^5"
   }
 }

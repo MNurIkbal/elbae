@@ -9,30 +9,16 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="col-auto">
             <div className="flex flex-wrap items-center gap-[16px]">
-              <button type="button" className="sidebar-toggle">
+              <button type="button">
                 <Icon icon="mdi:menu" className="menu-icon"></Icon>
               </button>
-              <form className="navbar-search">
+              <div className="navbar-search">
                 <h5>Aplikasi E-Arsip</h5>
-
-              </form>
+              </div>
             </div>
           </div>
           <div className="col-auto">
             <div className="flex flex-wrap items-center gap-3">
-              <button
-                type="button"
-                id="theme-toggle"
-                className="w-10 h-10 bg-neutral-200 dark:bg-neutral-700 dark:text-white rounded-full flex justify-center items-center"
-              >
-                <span id="theme-toggle-dark-icon" className="hidden">
-                  <i className="ri-sun-line" />
-                </span>
-                <span id="theme-toggle-light-icon" className="hidden">
-                  <i className="ri-moon-line" />
-                </span>
-              </button>
-              {/* Notification End  */}
               <div className="relative">
                 <button
                   id="buttonProfile"

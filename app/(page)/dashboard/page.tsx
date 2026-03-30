@@ -6,12 +6,12 @@ import ApexCharts from "apexcharts";
 import { Icon } from "@iconify/react";
 import Breakbout from "@/app/components/Breakbout";
 
-
 export default function DashboardPage() {
   const chartRef = useRef<HTMLDivElement | null>(null);
   const donutChartRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    
     if (!chartRef.current) return;
 
     const options: ApexCharts.ApexOptions = {
@@ -66,7 +66,7 @@ export default function DashboardPage() {
     if (!donutChartRef.current) return;
 
     const donutOptions: ApexCharts.ApexOptions = {
-      series: [30, 25],
+      series: [90, 10],
       colors: ["#FF9F29", "#487FFF"],
       labels: ["Female", "Male"],
       chart: {
@@ -116,7 +116,7 @@ export default function DashboardPage() {
   return (
     <>
       <Layout>
-        <div className="dashboard-main-body">
+        <div className="dashboard-main-body p-6  space-y-6">
           <Breakbout title="Dashboard" />
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             <div className="md:col-span-12 2xl:col-span-9">
@@ -140,7 +140,7 @@ export default function DashboardPage() {
                             <span className="w-[44px] h-[44px] text-primary-600 dark:text-primary-500 bg-primary-600/20 border border-primary-300 dark:border-primary-600/50 shrink-0 flex justify-center items-center rounded-lg h6 mb-4">
                             <Icon icon="mdi:package-variant" className="menu-icon" />
                             </span>
-                            <span className="mb-1 font-medium text-secondary-light text-base">
+                            <span className="mb-1 font-medium text-secondary-light ">
                               Total Arsip
                             </span>
                             <h6 className="font-semibold text-neutral-900 mt-2 mb-px">
@@ -155,7 +155,7 @@ export default function DashboardPage() {
                             <span className="w-[44px] h-[44px] text-warning-600 dark:text-warning-500 bg-warning-600/20 border border-warning-300 dark:border-warning-600/50 shrink-0 flex justify-center items-center rounded-lg h6 mb-4">
                             <Icon icon="mdi:account" className="menu-icon" />
                             </span>
-                            <span className="mb-1 font-medium text-secondary-light text-base">
+                            <span className="mb-1 font-medium text-secondary-light">
                               Total User
                             </span>
                             <h6 className="font-semibold text-neutral-900 mt-2 mb-px">
@@ -170,7 +170,7 @@ export default function DashboardPage() {
                             <span className="w-[44px] h-[44px] text-purple-600 dark:text-purple-500 bg-purple-600/20 border border-purple-300 dark:border-purple-600/50 shrink-0 flex justify-center items-center rounded-lg h6 mb-4">
                             <Icon icon="mdi:tag" className="menu-icon" />
                             </span>
-                            <span className="mb-1 font-medium text-secondary-light text-base">
+                            <span className="mb-1 font-medium text-secondary-light ">
                               Total Kategori
                             </span>
                             <h6 className="font-semibold text-neutral-900 mt-2 mb-px">
@@ -179,13 +179,13 @@ export default function DashboardPage() {
                           </div>
                         </div>
                       </div>
-                      <div className="card-body p-6 h-full flex flex-col">
+                      <div className="card-body p-6 h-full  flex flex-col">
                         <div className="flex flex-wrap items-center justify-between gap-1 mb-0.5">
                           <div>
                             <span className="w-[44px] h-[44px] text-pink-600 dark:text-pink-500 bg-pink-600/20 border border-pink-300 dark:border-pink-600/50 shrink-0 flex justify-center items-center rounded-lg h6 mb-4">
                             <Icon icon="mdi:account-lock" className="menu-icon" />
                             </span>
-                            <span className="mb-1 font-medium text-secondary-light text-base">
+                            <span className="mb-1 font-medium text-secondary-light ">
                               Total Role
                             </span>
                             <h6 className="font-semibold text-neutral-900 mt-2 mb-px">
@@ -206,16 +206,10 @@ export default function DashboardPage() {
                     <h6 className="mb-2 font-bold text-lg">Grafik Kategori Pengarsipan</h6>
                   </div>
                   <div className="relative">
-                    <span className="w-[80px] h-[80px] bg-white dark:bg-neutral-700 shadow-lg text-neutral-600 dark:text-neutral-200 font-semibold text-xl flex justify-center items-center rounded-full absolute end-0 top-0 z-99999">
-                      +30%
-                    </span>
                     <div
                       id="statisticsDonutChart" ref={donutChartRef}
                       className="mt-9 grow apexcharts-tooltip-z-none title-style circle-none"
                     />
-                    <span className="w-[80px] h-[80px] bg-white dark:bg-neutral-700 shadow-lg text-neutral-600 dark:text-neutral-200 font-semibold text-xl flex justify-center items-center rounded-full absolute start-0 bottom-0 z-1">
-                      +25%
-                    </span>
                   </div>
                   <ul className="flex flex-wrap items-center justify-between mt-4 gap-3">
                     <li className="flex items-center gap-2">

@@ -12,7 +12,6 @@ export default function Header() {
               <button type="button" className="sidebar-toggle">
                 <Icon icon="mdi:menu" className="menu-icon"></Icon>
               </button>
-              
               <form className="navbar-search">
                 <h5>Aplikasi E-Arsip</h5>
 
@@ -56,7 +55,7 @@ export default function Header() {
                   <div className="py-3 px-4 rounded-lg bg-primary-50 dark:bg-primary-600/25 mb-4 flex items-center justify-between gap-2">
                     <div>
                       <h6 className="text-lg text-neutral-900 font-semibold mb-0">
-                        Shahidul Islam
+                        M.Nur Ikbal
                       </h6>
                       <span className="text-neutral-500">Admin</span>
                     </div>

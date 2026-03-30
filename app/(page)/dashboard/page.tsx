@@ -4,6 +4,7 @@ import Layout from "../../layout/Layout";
 import { useEffect, useRef } from "react";
 import ApexCharts from "apexcharts";
 import { Icon } from "@iconify/react";
+import Breakbout from "@/app/components/Breakbout";
 
 
 export default function DashboardPage() {
@@ -116,18 +117,7 @@ export default function DashboardPage() {
     <>
       <Layout>
         <div className="dashboard-main-body">
-          <div className="flex flex-wrap items-center justify-between gap-2 mb-6 mt-4">
-            <h6 className="font-semibold mb-0 dark:text-white">Dashboard</h6>
-            <ul className="flex items-center gap-[6px]">
-              <li className="font-medium">
-                <span
-                  className="flex items-center gap-2 text-neutral-600 hover:text-primary-600 dark:text-white dark:hover:text-primary-600"
-                >
-                  Dashboard
-                </span>
-              </li>
-            </ul>
-          </div>
+          <Breakbout title="Dashboard" />
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             <div className="md:col-span-12 2xl:col-span-9">
               <div className="card rounded-lg border-0">
